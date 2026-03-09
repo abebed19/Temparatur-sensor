@@ -6,6 +6,8 @@
 package application;
 
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
@@ -13,7 +15,7 @@ import java.io.PrintWriter;
  * @author aaron
  */
 public class Test {
-    public static void main(String... args) throws FileNotFoundException{
+    public static void main(String... args) throws FileNotFoundException,IOException{
         
         PrintWriter writer =new PrintWriter("AbyeTsom.txt");
         writer.println("Abye tsom is the one we can study more about jesus");
@@ -21,10 +23,15 @@ public class Test {
         writer.println("The number of exact days we fast are 40 only");
         writer.close();
         
+        FileWriter fileWriter = new FileWriter("AbyeTsom.txt",true);
         
-        PrintWriter writer2 = new PrintWriter(System.out);
-        writer2.println("PrintWriter writes to Console");
-        writer2.close();
+        fileWriter.write("Jesus is loard");
+        fileWriter.write("Merry Jesus");
+        fileWriter.close();
+        
+        
+        
+      
     }
     
 }
