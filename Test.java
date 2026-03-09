@@ -21,6 +21,10 @@ public class Test {
         writer.println("The number of exact days we fast are 40 only");
         writer.close();
         
+        
+        PrintWriter writer2 = new PrintWriter(System.out);
+        writer2.println("PrintWriter writes to Console");
+        writer2.close();
     }
     
 }

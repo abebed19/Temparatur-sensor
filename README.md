@@ -105,6 +105,8 @@ temperature in Helsinki region 5 degrees Celsius
 
 readings: [-10, -4, 5]
 
+# PrintWriter
+
 , let's take a look at writing data to files. The PrintWriter class offers the functionality to write to files. The constructor of the PrintWriter class receives as its parameter a string that represents the location of the target file.
 
 PrintWriter writer = new PrintWriter("file.txt");
