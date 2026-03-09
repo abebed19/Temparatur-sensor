@@ -104,3 +104,11 @@ temperature in Helsinki region -4 degrees Celsius
 temperature in Helsinki region 5 degrees Celsius
 
 readings: [-10, -4, 5]
+
+, let's take a look at writing data to files. The PrintWriter class offers the functionality to write to files. The constructor of the PrintWriter class receives as its parameter a string that represents the location of the target file.
+
+PrintWriter writer = new PrintWriter("file.txt");
+writer.println("Hello file!"); //writes the string "Hello file!" and line change to the file
+writer.println("More text");
+writer.print("And a little extra"); // writes the string "And a little extra" to the file without a line change
+writer.close(); //closes the file and ensures that the written text is saved to the file
